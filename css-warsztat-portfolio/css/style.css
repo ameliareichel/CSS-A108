@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+button,
+h2,
+header {
+    color: #333;
+}
+
+
+nav {
+    background-color: #007bff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+button,
+input[type="submit"],
+a.my-portfolio {
+    border: 1px solid #007bff;
+    background-color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    color: #333;
+}
+
+span {
+    color: #007bff;
+}
+
+header h1 {
+    font-size: 4.2em;
+    font-weight: 600;
+    color: #007bff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+hr + p {
+    font-size: 1.3em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header,
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+section.flex-container {
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+section#about p,
+footer {
+    color: #777;
+}
+
+section#about p {
+    line-height: 1.4;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    max-width: 700px;
+}
+
+section#portfolio,
+footer {
+    background-color: #f2f1ed;
+}
+
+section#about img {
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+input,
+textarea {
+    text-align: left;
+    border: 1px solid #777;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+
+hr {
+    display: block;
+    width: 6%;
+    background-color: #007bff;
+}
+
+
+form {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+input[type="email"],
+input[type="text"] {
+    flex-basis: 44%;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    height: 70px;
+}
+
+input[type="submit"] {
+    flex-basis: 30%;
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.portfolio-container {
+    max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+
+img.portfolio {
+    width: 100%;
+    height: 200px;
+    flex-basis: 25%;
+    object-fit: cover;
+    border: none;
+}
+
+div.portfolio-container a {
+    width: 25%;
+    height: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+    position: relative;
+}
+
+.portfolio-img p {
+    background-color: rgb(0, 123, 255, 0.8);
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    padding: 0;
+    line-height: 195px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+.portfolio-img p:hover {
+    opacity: 1;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-top: 80px;
+    color: transparent;
+}
+
+section#about p,
+form,
+input[type="submit"],
+.portfolio-container,
+.social-media a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-media a.fb {
+    background-image: url(../svg/svg-before/icons8-facebook.svg);
+    transition: all 0.3s;
+}
+
+.social-media a.fb:hover {
+    background-image: url(../svg/svg-hover/icons8-facebook.svg);
+}
+
+.social-media a.tt {
+    background-image: url(../svg/svg-before/icons8-twitter.svg);
+    transition: all 0.3s;
+}
+
+.social-media a.tt:hover {
+    background-image: url(../svg/svg-hover/icons8-twitter.svg);
+}
+
+.social-media a.ig {
+    background-image: url(../svg/svg-before/icons8-instagram.svg);
+    transition: all 0.3s;
+}
+
+.social-media a.ig:hover {
+    background-image: url(../svg/svg-hover/icons8-instagram.svg);
+}
+
+.social-media a.yt {
+    background-image: url(../svg/svg-before/icons8-youtube.svg);
+    transition: all 0.3s;
+}
+
+.social-media a.yt:hover {
+    background-image: url(../svg/svg-hover/icons8-youtube.svg);
+}
+
+.social-media a.fb,
+.social-media a.tt,
+.social-media a.ig,
+.social-media a.yt {
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .portfolio-container .portfolio-img {
+        flex-basis: 50%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+    .portfolio-container .portfolio-img {
+        flex-basis: 100%;
+    }
+    input[type="text"],
+    input[type="email"] {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    input[type="text"],
+    input[type="email"] {
+        flex-basis: 100%;
+    }
+}
