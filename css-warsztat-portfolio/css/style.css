@@ -23,14 +23,39 @@ header {
     color: #333;
 }
 
-
-nav {
-    background-color: #007bff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+#dropnav {
+    display: none;
 }
 
-a {
+.main-menu {
+    background-color: #007bff;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+label[for="dropnav"] {
+    display: none;
+}
+
+.main-menu ul .menu-items {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-menu ul .menu-items a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: all 0.3s;
+}
+
+a.my-portfolio {
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -59,7 +84,6 @@ header h1 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 
 hr + p {
     font-size: 1.3em;
@@ -122,7 +146,6 @@ hr {
     background-color: #007bff;
 }
 
-
 form {
     max-width: 700px;
     display: flex;
@@ -133,10 +156,10 @@ form {
 
 input[type="email"],
 input[type="text"] {
-    flex-basis: 44%;
-    margin-top: 35px;
+    flex-basis: 43%;
+    margin-top: 15px;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 12px;
 }
 
 textarea {
@@ -266,12 +289,14 @@ input[type="submit"],
 @media all and (max-width: 1200px) {
     .container {
         max-width: 992px;
+        margin: auto;
     }
 }
 
 @media all and (max-width: 992px) {
     .container {
         max-width: 768px;
+        margin: auto;
     }
     .portfolio-container .portfolio-img {
         flex-basis: 50%;
@@ -281,19 +306,48 @@ input[type="submit"],
 @media all and (max-width: 768px) {
     .container {
         max-width: 95%;
+        margin: auto;
     }
     .portfolio-container .portfolio-img {
-        flex-basis: 100%;
-    }
-    input[type="text"],
-    input[type="email"] {
         flex-basis: 100%;
     }
 }
 
 @media all and (max-width: 480px) {
+    .container {
+        margin: auto;
+    }
     input[type="text"],
     input[type="email"] {
         flex-basis: 100%;
+    }
+    label[for="dropnav"] {
+        display: block;
+        padding: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+        cursor: pointer;
+    }
+    .main-menu ul {
+        display: none;
+    }
+    #dropnav:checked + ul {
+        display: block;
+    }
+    .main-menu ul .menu-items a {
+        text-align: right;
+      }    
+    .main-menu ul .menu-items {
+        display: block;
+        transition: all 0.3s;
+    }
+    .main-menu ul .menu-items a:hover {
+        color: #007bff;
+        background-color: #fff;
+    }
+    img[alt="zdjęcie-o-mnie"] {
+        max-width: 50%;
     }
 }
